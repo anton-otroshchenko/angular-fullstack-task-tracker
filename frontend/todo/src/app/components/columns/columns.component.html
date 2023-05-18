@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <div class="header-content">
+    <h2>Columns</h2>
+    <div class="input">
+      <input [(ngModel)]="title" placeholder="Column..."/>
+      <button (click)="onClick()" class="blue-button">Add</button>
+    </div>
+  </div>
+  <div class="main-content">
+    <app-column-line *ngFor="let column of columns" [title]="column.name" [id]="column.id" />
+  </div>
+</div>

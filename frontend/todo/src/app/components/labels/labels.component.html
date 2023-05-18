@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <div class="header-content">
+    <h2>Labels</h2>
+    <div class="input">
+      <input [(ngModel)]="title" placeholder="Label..."/>
+      <button (click)="onClick()" class="blue-button">Save</button>
+    </div>
+  </div>
+  <div class="main-content">
+    <app-label (labelDeleted)="onLabelDeleted($event)" *ngFor="let label of labels" [title]="label.name" [id]="label.id"></app-label>
+  </div>
+</div>

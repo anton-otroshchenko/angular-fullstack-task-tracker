@@ -1,0 +1,29 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width:270px;
+  min-height:80px;
+  background: white;
+  border: 1px solid dodgerblue;
+}
+
+.wrapper:hover{
+  cursor: pointer;
+}
+
+.wrapper h3{
+  padding: 10px;
+}
+
+.tasks{
+  display: flex;
+  padding: 10px;
+  gap:5px;
+  flex-wrap: wrap;
+}
+
+.tasks div {
+  border: 1px solid dodgerblue;
+}

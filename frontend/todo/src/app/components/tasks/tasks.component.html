@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <div class="header-content">
+    <h2>Tasks</h2>
+    <button><a routerLink="/new-task">+</a></button>
+  </div>
+  <div class="main-content">
+    <app-column *ngFor="let column of columns" [title]="column.name"><app-column-task
+      *ngFor="let task of filteredTasks(column.id)"
+      [title]="task.title"
+      [labels]="task.labels"
+      [id]="task.id"
+    ></app-column-task></app-column>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<div (click)="onClick()" class="wrapper">
+    <h3>{{title}}</h3>
+    <div class="tasks">
+      <p *ngFor="let label of labels">{{label.name}}</p>
+    </div>
+</div>

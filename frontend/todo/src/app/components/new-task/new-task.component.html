@@ -1,0 +1,20 @@
+<form class="wrapper" [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+  <label>Title:</label>
+  <input type="text" placeholder="Enter title" formControlName="title" required>
+
+  <label>Details:</label>
+  <input placeholder="Enter details" formControlName="details">
+
+  <label>Column:</label>
+  <select name="column" formControlName="columnId" required>
+    <option *ngFor="let column of columns" [value]="column.id">{{column.name}}</option>
+  </select>
+
+  <label>Labels:</label>
+  <select name="tags" formControlName="labels" multiple>
+    <option *ngFor="let label of labels" [value]="label.id">{{label.name}}</option>
+  </select>
+
+  <input type="submit" value="Submit">
+  <button *ngIf="id" (click)="onDelete()">Delete</button>
+</form>

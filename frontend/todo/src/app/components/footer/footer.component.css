@@ -1,0 +1,14 @@
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: auto;
+  background: dodgerblue;
+  height: 50px;
+  width: 100%;
+  color: white;
+  flex-shrink: 0;
+}
+p{
+  padding-right: 10px;
+}

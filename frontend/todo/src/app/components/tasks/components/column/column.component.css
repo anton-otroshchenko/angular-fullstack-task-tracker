@@ -1,0 +1,44 @@
+.column-wrapper{
+  display: flex;
+  flex-direction: column;
+  height:600px;
+  width:300px;
+  background: lightgrey;
+  margin: 0 10px;
+  border: 1px solid dodgerblue;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+.column-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-bottom: 1px solid dodgerblue;
+  color: dodgerblue;
+}
+
+.column-header button {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: dodgerblue;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+
+.column-header button:hover {
+  cursor: pointer;
+}
+
+.column-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  overflow-y: auto;
+  padding-top: 10px;
+}
