@@ -3,6 +3,16 @@
   flex-direction: column;
   background: #d5ffff;
   height: 100%;
+  width: 100%;
   align-items: center;
   gap: 30px;
+}
+
+.body app-columns {
+  width: 100%;
+}
+
+.wrapper-body{
+  height: 100%;
+  width: 100%;
 }
